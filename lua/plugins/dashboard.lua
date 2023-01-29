@@ -44,7 +44,7 @@ return {
 					new_section("Find file", "Telescope git_files", "Telescope"),
 					new_section("Old files(Recent)", "Telescope oldfiles", "Telescope"),
 					new_section("Word grep", "Telescope live_grep", "Telescope"),
-					new_section("Config", "e ~/.config/astronvim", "Config"),
+					new_section("Config", "e ~/.config/nvim", "Config"),
 					new_section("Restore Session", "SessionManager! load_last_session", "Built-in"),
 					new_section("Sessions", "SessionManager! load_session", "Built-in"),
 					new_section("Lazy", "Lazy", "Config"),

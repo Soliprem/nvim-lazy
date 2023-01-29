@@ -3,7 +3,6 @@ require("lazy").setup("plugins")
 require("config").setup()
 for _, source in ipairs({
 	"util",
-	"config",
 	"config.options",
 	"config.autocmds",
 	"config.keymaps",
