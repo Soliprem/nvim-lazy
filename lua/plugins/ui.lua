@@ -217,10 +217,9 @@ return {
 		enabled = true,
 		event = "VimEnter",
 		opts = function()
-			local logo = table.concat(
-				{
-					[[
-		.,;>>%%%%%>>;,.
+			local logo = table.concat({
+				[[
+          		.,;>>%%%%%>>;,.
            .>%%%%%%%%%%%%%%%%%%%%>,.
          .>%%%%%%%%%%%%%%%%%%>>,%%%%%%;,.
        .>>>>%%%%%%%%%%%%%>>,%%%%%%%%%%%%,>>%%,.
@@ -253,9 +252,7 @@ return {
              >>%%%%>>``%%%%%>>>>>'     `>%%%%%%.
              >>%%%%>> `@@a%%%%%%'     .%%%%%%%%%.
              `a@@a%@'    `%a@@'       `a@@a%a@@a']],
-				},
-				"\n"
-			)
+			}, "\n")
 			local pad = string.rep(" ", 0)
 			local function new_section(name, action, section)
 				return { name = name, action = action, section = pad .. section }

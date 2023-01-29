@@ -1,14 +1,11 @@
--- start screen
 return {
-
-	-- enable mini.starter
 	"echasnovski/mini.starter",
 	enabled = true,
 	event = "VimEnter",
 	opts = function()
 		local logo = table.concat({
 			[[
-		          .,;>>%%%%%>>;,.
+          		.,;>>%%%%%>>;,.
            .>%%%%%%%%%%%%%%%%%%%%>,.
          .>%%%%%%%%%%%%%%%%%%>>,%%%%%%;,.
        .>>>>%%%%%%%%%%%%%>>,%%%%%%%%%%%%,>>%%,.
@@ -100,5 +97,10 @@ return {
 				pcall(starter.refresh)
 			end,
 		})
+	end,
+}, {
+	"folke/drop.nvim",
+	config = function()
+		require("drop").setup()
 	end,
 }
