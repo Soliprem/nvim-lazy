@@ -2,12 +2,6 @@ local Util = require("util")
 
 return {
 
-	{
-		"jbyuki/nabla.nvim",
-		-- stylua: ignore
-		-- keys = { "<leader>p", function() require("nabla").popup() end, desc = "nabla" },
-		module = "nabla",
-	},
 	-- file explorer
 	{
 		"nvim-neo-tree/neo-tree.nvim",
@@ -134,6 +128,23 @@ return {
 						end,
 						["<C-Down>"] = function(...)
 							return require("telescope.actions").cycle_history_next(...)
+						end,
+						["<C-j>"] = function(...)
+							return require("telescope.actions").move_selection_next(...)
+						end,
+						["<C-k>"] = function(...)
+							return require("telescope.actions").move_selection_previous(...)
+						end,
+						["<C-n>"] = function(...)
+							return require("telescope.actions").preview_scrolling_down(...)
+						end,
+						["<C-p>"] = function(...)
+							return require("telescope.actions").preview_scrolling_up(...)
+						end,
+					},
+					n = {
+						["q"] = function(...)
+							return require("telescope.actions").close(...)
 						end,
 						["<C-Up>"] = function(...)
 							return require("telescope.actions").cycle_history_prev(...)

@@ -36,6 +36,7 @@ return {
 		dependencies = {
 			"hrsh7th/cmp-nvim-lsp",
 			"hrsh7th/cmp-buffer",
+			"kdheepak/cmp-latex-symbols",
 			"hrsh7th/cmp-path",
 			"hrsh7th/cmp-emoji",
 			"saadparwaiz1/cmp_luasnip",
@@ -61,6 +62,12 @@ return {
 				sources = cmp.config.sources({
 					{ name = "nvim_lsp" },
 					{ name = "luasnip" },
+					{
+						name = "latex-symbols",
+						option = {
+							strategy = 0, -- 0=mixed, 1=julia, 2=latex
+						},
+					},
 					{ name = "buffer" },
 					{ name = "path" },
 					{ name = "emoji" },

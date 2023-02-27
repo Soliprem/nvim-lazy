@@ -10,6 +10,7 @@ local defaults = {
 	colorscheme = function()
 		require("gruvbox").load()
 	end,
+	-- colorscheme = "solarized",
 	-- icons used by other plugins
 	icons = {
 		diagnostics = {
